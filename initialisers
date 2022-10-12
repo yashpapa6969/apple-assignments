@@ -1,0 +1,21 @@
+ 
+struct Person {
+    var name: String
+      
+    func sayHello() {
+        print("Hello, there!")
+    }
+}
+ 
+let person = Person(name: "Jasmine") // Memberwise initializer
+ 
+struct Car {
+    var make: String
+    var model: String
+    var year: Int 
+    var topSpeed: Int
+}
+ 
+let firstCar = Car(make: "Honda", model: "Civic", year: 2010,
+                                                          topSpeed: 120) // Memberwise initializer
+  

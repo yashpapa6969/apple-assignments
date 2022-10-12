@@ -1,0 +1,29 @@
+struct Temperature {
+    var celsius: Double
+      
+    init(celsius: Double) {
+        self.celsius = celsius
+    }
+      
+    init(fahrenheit: Double) {
+        celsius = (fahrenheit - 32) / 1.8
+    }
+      
+    init(kelvin: Double) {
+        celsius = kelvin - 273.15
+    }
+    init() {
+        celsius = 0
+    }
+}
+ 
+let currentTemperature = Temperature(celsius: 18.5)
+let boiling = Temperature(fahrenheit: 212.0)
+let absoluteZero = Temperature(kelvin: 0.0)
+let freezing = Temperature()
+ 
+print(currentTemperature.celsius)
+print(boiling.celsius)
+print(absoluteZero.celsius)
+print(freezing.celsius)
+
