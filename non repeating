@@ -1,0 +1,14 @@
+let inputString = "PQRSTPRATBCPPPPPCPPJ"
+
+func nonRepeat (_ input: String) -> String {
+    for char in input {
+        if input.firstIndex(of: char) == input.lastIndex(of: char) {
+            return String(char)
+        }
+    }
+    return ""
+}
+print (nonRepeat(inputString))
+
+
+

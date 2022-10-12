@@ -1,0 +1,19 @@
+//input string = aabbccddfg
+func repeatedCharacter(inputArray:[String])->[String:Int] {
+    var dict = [String:Int]()
+    if inputArray.count > 0
+    { 
+        for char in inputArray{
+            if let keyExists = dict[char],
+               keyExists != nil{
+                dict[char] = Int(dict[char] ?? 0) + 1
+            }else{
+                dict[char] = 1
+                
+            }
+        }
+    }
+    return dict
+}
+let aa = ["a","a","b","b","c","c","d","d","f","g"]
+print(repeatedCharacter(inputArray: aa))

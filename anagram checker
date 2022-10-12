@@ -1,0 +1,7 @@
+//compares two strings character by character by sorting them
+func checkForAnagram(firstStr: String, secondStr: String) -> Bool {
+print(firstStr.sorted())
+print(secondStr.sorted())
+return firstStr.lowercased().sorted() == secondStr.lowercased().sorted()
+}
+let a = checkForAnagram(firstStr: "race", secondStr: "care")
